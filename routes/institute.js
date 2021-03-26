@@ -47,15 +47,6 @@ router.patch('/:id', async (req, res) => {
                 res.send('added')
                 }
             );
-
-        // console.log(institute1);
-        // // const a1 = await institute.findByIdAndUpdate(req.params.id, institute)
-        // // console.log(available)
-
-        // const a1 = await institute1.available.push(newQuiz)
-        // const a2 = await institute1.save(done)
-        // console.log(a1);
-        // res.json(a2)
     } catch (err) {
         console.log(err);
     }

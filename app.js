@@ -12,7 +12,7 @@ const app = express()
 app.use(cors())
 
 //mongoose connecting
-mongoose.connect(mongoConnectionString, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoConnectionString, { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false });
 const con = mongoose.connection
 
 con.on('open', () => {
